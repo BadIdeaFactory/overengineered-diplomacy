@@ -1,0 +1,1523 @@
+{
+    "adr": {
+        "name": "Adriatic Sea",
+        "abbreviations": [
+            "adr",
+            "adriatic"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "alb",
+            "apu",
+            "ion",
+            "tri",
+            "ven"
+        ]
+    },
+    "aeg": {
+        "name": "Aegean Sea",
+        "abbreviations": [
+            "aeg",
+            "aegean"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "bul_sc",
+            "con",
+            "eas",
+            "gre",
+            "ion",
+            "smy"
+        ]
+    },
+    "alb": {
+        "name": "Albania",
+        "abbreviations": [
+            "alb"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "gre",
+            "ser",
+            "tri"
+        ],
+        "fleet_moves": [
+            "adr",
+            "gre",
+            "ion",
+            "tri"
+        ]
+    },
+    "ank": {
+        "name": "Ankara",
+        "abbreviations": [
+            "ank"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "arm",
+            "con",
+            "smy"
+        ],
+        "fleet_moves": [
+            "arm",
+            "bla",
+            "con"
+        ]
+    },
+    "apu": {
+        "name": "Apulia",
+        "abbreviations": [
+            "apu"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "nap",
+            "rom",
+            "ven"
+        ],
+        "fleet_moves": [
+            "adr",
+            "ion",
+            "nap",
+            "ven"
+        ]
+    },
+    "arm": {
+        "name": "Armenia",
+        "abbreviations": [
+            "arm"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "ank",
+            "sev",
+            "smy",
+            "syr"
+        ],
+        "fleet_moves": [
+            "ank",
+            "bla",
+            "sev"
+        ]
+    },
+    "bal": {
+        "name": "Baltic Sea",
+        "abbreviations": [
+            "bal",
+            "baltic"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "ber",
+            "bot",
+            "den",
+            "lvn",
+            "kie",
+            "pru",
+            "swe"
+        ]
+    },
+    "bar": {
+        "name": "Barents Sea",
+        "abbreviations": [
+            "bar",
+            "barents"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "nwy",
+            "nwg",
+            "stp_nc"
+        ]
+    },
+    "bel": {
+        "name": "Belgium",
+        "abbreviations": [
+            "bel"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "bur",
+            "hol",
+            "pic",
+            "ruh"
+        ],
+        "fleet_moves": [
+            "eng",
+            "hol",
+            "nth",
+            "pic"
+        ]
+    },
+    "ber": {
+        "name": "Berlin",
+        "abbreviations": [
+            "ber"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "kie",
+            "mun",
+            "pru",
+            "sil"
+        ],
+        "fleet_moves": [
+            "bal",
+            "kie",
+            "pru"
+        ]
+    },
+    "bla": {
+        "name": "Black Sea",
+        "abbreviations": [
+            "bla",
+            "black"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "ank",
+            "arm",
+            "bul_ec",
+            "con",
+            "rum",
+            "sev"
+        ]
+    },
+    "boh": {
+        "name": "Bohemia",
+        "abbreviations": [
+            "boh"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "gal",
+            "mun",
+            "sil",
+            "tyr",
+            "vie"
+        ],
+        "fleet_moves": []
+    },
+    "bre": {
+        "name": "Brest",
+        "abbreviations": [
+            "bre"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "gas",
+            "par",
+            "pic"
+        ],
+        "fleet_moves": [
+            "eng",
+            "gas",
+            "mao",
+            "pic"
+        ]
+    },
+    "bud": {
+        "name": "Budapest",
+        "abbreviations": [
+            "bud"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "gal",
+            "rum",
+            "ser",
+            "tri",
+            "vie"
+        ],
+        "fleet_moves": []
+    },
+    "bul_ec": {
+        "name": "Bulgaria (east coast)",
+        "abbreviations": [
+            "bul\/ec",
+            "bul(ec)",
+            "bulgaria\/ec",
+            "bulgaria(ec)"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "con",
+            "rum"
+        ],
+        "fleet_moves": [
+            "bla",
+            "con",
+            "rum"
+        ]
+    },
+    "bul_sc": {
+        "name": "Bulgaria (south coast)",
+        "abbreviations": [
+            "bul\/sc",
+            "bul(sc)",
+            "bulgaria\/sc",
+            "bulgaria(sc)"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "con",
+            "gre"
+        ],
+        "fleet_moves": [
+            "aeg",
+            "con",
+            "gre"
+        ]
+    },
+    "bul": {
+        "name": "Bulgaria",
+        "abbreviations": [
+            "bul"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "con",
+            "gre",
+            "rum",
+            "ser"
+        ],
+        "fleet_moves": [
+            "aeg",
+            "bla",
+            "con",
+            "gre",
+            "rum"
+        ]
+    },
+    "bur": {
+        "name": "Burgundy",
+        "abbreviations": [
+            "bur",
+            "burgandy"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "bel",
+            "gas",
+            "ruh",
+            "mar",
+            "mun",
+            "par",
+            "pic",
+            "swi"
+        ],
+        "fleet_moves": []
+    },
+    "cly": {
+        "name": "Clyde",
+        "abbreviations": [
+            "cly"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "edi",
+            "lvp"
+        ],
+        "fleet_moves": [
+            "edi",
+            "lvp",
+            "nao",
+            "nwg"
+        ]
+    },
+    "con": {
+        "name": "Constantinople",
+        "abbreviations": [
+            "con"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "bul_ec",
+            "bul_sc",
+            "ank",
+            "smy"
+        ],
+        "fleet_moves": [
+            "aeg",
+            "bul_ec",
+            "bul_sc",
+            "bla",
+            "ank",
+            "smy"
+        ]
+    },
+    "den": {
+        "name": "Denmark",
+        "abbreviations": [
+            "den"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "kie",
+            "swe"
+        ],
+        "fleet_moves": [
+            "bal",
+            "hel",
+            "kie",
+            "nth",
+            "ska",
+            "swe"
+        ]
+    },
+    "eas": {
+        "name": "Eastern Mediterranean",
+        "abbreviations": [
+            "eas",
+            "emed",
+            "east",
+            "eastern",
+            "eastmed",
+            "ems",
+            "eme",
+            "emd",
+            "eas+med"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "aeg",
+            "ion",
+            "smy",
+            "syr"
+        ]
+    },
+    "edi": {
+        "name": "Edinburgh",
+        "abbreviations": [
+            "edi"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "cly",
+            "lvp",
+            "yor"
+        ],
+        "fleet_moves": [
+            "cly",
+            "nth",
+            "nwg",
+            "yor"
+        ]
+    },
+    "eng": {
+        "name": "English Channel",
+        "abbreviations": [
+            "eng",
+            "english",
+            "channel",
+            "ech",
+            "eng+ch"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "bel",
+            "bre",
+            "iri",
+            "lon",
+            "mao",
+            "nth",
+            "pic",
+            "wal"
+        ]
+    },
+    "fin": {
+        "name": "Finland",
+        "abbreviations": [
+            "fin"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "nwy",
+            "stp_sc",
+            "swe"
+        ],
+        "fleet_moves": [
+            "bot",
+            "stp_sc",
+            "swe"
+        ]
+    },
+    "gal": {
+        "name": "Galicia",
+        "abbreviations": [
+            "gal",
+            "galacia"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "boh",
+            "bud",
+            "rum",
+            "sil",
+            "ukr",
+            "vie",
+            "war"
+        ],
+        "fleet_moves": []
+    },
+    "gas": {
+        "name": "Gascony",
+        "abbreviations": [
+            "gas"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "bur",
+            "bre",
+            "mar",
+            "par",
+            "spa_nc"
+        ],
+        "fleet_moves": [
+            "bre",
+            "mao",
+            "spa_nc"
+        ]
+    },
+    "gre": {
+        "name": "Greece",
+        "abbreviations": [
+            "gre"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "alb",
+            "bul_sc",
+            "ser"
+        ],
+        "fleet_moves": [
+            "aeg",
+            "alb",
+            "bul_sc",
+            "ion"
+        ]
+    },
+    "lyo": {
+        "name": "Gulf of Lyon",
+        "abbreviations": [
+            "lyo",
+            "gol",
+            "gulfofl",
+            "lyon"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "mar",
+            "pie",
+            "spa_sc",
+            "tus",
+            "tys",
+            "wes"
+        ]
+    },
+    "bot": {
+        "name": "Gulf of Bothnia",
+        "abbreviations": [
+            "bot",
+            "gob",
+            "both",
+            "gulfofb",
+            "bothnia"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "bal",
+            "fin",
+            "lvn",
+            "stp_sc",
+            "swe"
+        ]
+    },
+    "hel": {
+        "name": "Helgoland Bight",
+        "abbreviations": [
+            "hel",
+            "helgoland",
+            "heligoland",
+            "heligoland+bight"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "den",
+            "hol",
+            "kie",
+            "nth"
+        ]
+    },
+    "hol": {
+        "name": "Holland",
+        "abbreviations": [
+            "hol"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "bel",
+            "kie",
+            "ruh"
+        ],
+        "fleet_moves": [
+            "bel",
+            "hel",
+            "kie",
+            "nth"
+        ]
+    },
+    "ion": {
+        "name": "Ionian Sea",
+        "abbreviations": [
+            "ion",
+            "ionian"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "adr",
+            "aeg",
+            "alb",
+            "apu",
+            "eas",
+            "gre",
+            "nap",
+            "tun",
+            "tys"
+        ]
+    },
+    "iri": {
+        "name": "Irish Sea",
+        "abbreviations": [
+            "iri",
+            "irish",
+            "irs"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "eng",
+            "lvp",
+            "mao",
+            "nao",
+            "wal"
+        ]
+    },
+    "kie": {
+        "name": "Kiel",
+        "abbreviations": [
+            "kie"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "ber",
+            "den",
+            "hol",
+            "mun",
+            "ruh"
+        ],
+        "fleet_moves": [
+            "bal",
+            "ber",
+            "den",
+            "hel",
+            "hol"
+        ]
+    },
+    "lvp": {
+        "name": "Liverpool",
+        "abbreviations": [
+            "lvp",
+            "livp",
+            "lpl"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "cly",
+            "edi",
+            "wal",
+            "yor"
+        ],
+        "fleet_moves": [
+            "cly",
+            "iri",
+            "nao",
+            "wal"
+        ]
+    },
+    "lvn": {
+        "name": "Livonia",
+        "abbreviations": [
+            "lvn",
+            "livo",
+            "lvo",
+            "lva"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "mos",
+            "pru",
+            "stp_sc",
+            "war"
+        ],
+        "fleet_moves": [
+            "bal",
+            "bot",
+            "pru",
+            "stp_sc"
+        ]
+    },
+    "lon": {
+        "name": "London",
+        "abbreviations": [
+            "lon"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "yor",
+            "wal"
+        ],
+        "fleet_moves": [
+            "eng",
+            "nth",
+            "yor",
+            "wal"
+        ]
+    },
+    "mar": {
+        "name": "Marseilles",
+        "abbreviations": [
+            "mar",
+            "mars"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "bur",
+            "gas",
+            "pie",
+            "spa_sc",
+            "swi"
+        ],
+        "fleet_moves": [
+            "lyo",
+            "pie",
+            "spa_sc",
+            "swi"
+        ]
+    },
+    "mao": {
+        "name": "Mid-Atlantic Ocean",
+        "abbreviations": [
+            "mao",
+            "midatlanticocean",
+            "midatlantic",
+            "mid",
+            "mat"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "bre",
+            "eng",
+            "gas",
+            "iri",
+            "naf",
+            "nao",
+            "por",
+            "spa_nc",
+            "spa_sc",
+            "wes"
+        ]
+    },
+    "mos": {
+        "name": "Moscow",
+        "abbreviations": [
+            "mos"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "lvn",
+            "sev",
+            "stp",
+            "ukr",
+            "war"
+        ],
+        "fleet_moves": []
+    },
+    "mun": {
+        "name": "Munich",
+        "abbreviations": [
+            "mun"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "ber",
+            "boh",
+            "bur",
+            "kie",
+            "ruh",
+            "sil",
+            "tyr",
+            "swi"
+        ],
+        "fleet_moves": []
+    },
+    "nap": {
+        "name": "Naples",
+        "abbreviations": [
+            "nap"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "apu",
+            "rom"
+        ],
+        "fleet_moves": [
+            "apu",
+            "ion",
+            "rom",
+            "tys"
+        ]
+    },
+    "nao": {
+        "name": "North Atlantic Ocean",
+        "abbreviations": [
+            "nao",
+            "nat"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "cly",
+            "iri",
+            "lvp",
+            "mao",
+            "nwg"
+        ]
+    },
+    "naf": {
+        "name": "North Africa",
+        "abbreviations": [
+            "naf",
+            "nora",
+            "n+afr"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "tun"
+        ],
+        "fleet_moves": [
+            "mao",
+            "tun",
+            "wes"
+        ]
+    },
+    "nth": {
+        "name": "North Sea",
+        "abbreviations": [
+            "nth",
+            "norsea",
+            "nts"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "bel",
+            "den",
+            "edi",
+            "eng",
+            "lon",
+            "hel",
+            "hol",
+            "nwy",
+            "nwg",
+            "ska",
+            "yor"
+        ]
+    },
+    "nwy": {
+        "name": "Norway",
+        "abbreviations": [
+            "nwy",
+            "nor",
+            "norw"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "fin",
+            "stp_nc",
+            "swe"
+        ],
+        "fleet_moves": [
+            "bar",
+            "nth",
+            "nwg",
+            "ska",
+            "stp_nc",
+            "swe"
+        ]
+    },
+    "nwg": {
+        "name": "Norwegian Sea",
+        "abbreviations": [
+            "nwg",
+            "norwegian",
+            "norwsea",
+            "nrg",
+            "norg"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "bar",
+            "cly",
+            "edi",
+            "nao",
+            "nwy",
+            "nth"
+        ]
+    },
+    "par": {
+        "name": "Paris",
+        "abbreviations": [
+            "par"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "bur",
+            "bre",
+            "gas",
+            "pic"
+        ],
+        "fleet_moves": []
+    },
+    "pic": {
+        "name": "Picardy",
+        "abbreviations": [
+            "pic"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "bel",
+            "bre",
+            "bur",
+            "par"
+        ],
+        "fleet_moves": [
+            "bel",
+            "bre",
+            "eng"
+        ]
+    },
+    "pie": {
+        "name": "Piedmont",
+        "abbreviations": [
+            "pie"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "mar",
+            "tus",
+            "tyr",
+            "ven",
+            "swi"
+        ],
+        "fleet_moves": [
+            "lyo",
+            "mar",
+            "tus",
+            "swi"
+        ]
+    },
+    "por": {
+        "name": "Portugal",
+        "abbreviations": [
+            "por"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "spa_nc",
+            "spa_sc"
+        ],
+        "fleet_moves": [
+            "mao",
+            "spa_nc",
+            "spa_sc"
+        ]
+    },
+    "pru": {
+        "name": "Prussia",
+        "abbreviations": [
+            "pru"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "ber",
+            "lvn",
+            "sil",
+            "war"
+        ],
+        "fleet_moves": [
+            "bal",
+            "ber",
+            "lvn"
+        ]
+    },
+    "rom": {
+        "name": "Rome",
+        "abbreviations": [
+            "rom"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "apu",
+            "nap",
+            "tus",
+            "ven"
+        ],
+        "fleet_moves": [
+            "nap",
+            "tus",
+            "tys"
+        ]
+    },
+    "ruh": {
+        "name": "Ruhr",
+        "abbreviations": [
+            "ruh"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "bel",
+            "bur",
+            "hol",
+            "kie",
+            "mun"
+        ],
+        "fleet_moves": []
+    },
+    "rum": {
+        "name": "Rumania",
+        "abbreviations": [
+            "rum"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "bud",
+            "bul_ec",
+            "gal",
+            "ser",
+            "sev",
+            "ukr"
+        ],
+        "fleet_moves": [
+            "bla",
+            "bul_ec",
+            "sev"
+        ]
+    },
+    "ser": {
+        "name": "Serbia",
+        "abbreviations": [
+            "ser"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "alb",
+            "bud",
+            "bul",
+            "gre",
+            "rum",
+            "tri"
+        ],
+        "fleet_moves": []
+    },
+    "sev": {
+        "name": "Sevastopol",
+        "abbreviations": [
+            "sev",
+            "sevastapol"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "arm",
+            "mos",
+            "rum",
+            "ukr"
+        ],
+        "fleet_moves": [
+            "arm",
+            "bla",
+            "rum"
+        ]
+    },
+    "sil": {
+        "name": "Silesia",
+        "abbreviations": [
+            "sil"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "ber",
+            "boh",
+            "gal",
+            "mun",
+            "pru",
+            "war"
+        ],
+        "fleet_moves": []
+    },
+    "ska": {
+        "name": "Skagerrak",
+        "abbreviations": [
+            "ska"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "den",
+            "nwy",
+            "nth",
+            "swe"
+        ]
+    },
+    "smy": {
+        "name": "Smyrna",
+        "abbreviations": [
+            "smy"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "ank",
+            "arm",
+            "con",
+            "syr"
+        ],
+        "fleet_moves": [
+            "aeg",
+            "con",
+            "eas",
+            "syr"
+        ]
+    },
+    "spa_nc": {
+        "name": "Spain (north coast)",
+        "abbreviations": [
+            "spa\/nc",
+            "spa(nc)",
+            "spain\/nc",
+            "spain(nc)",
+            "spn\/nc",
+            "spn(nc)",
+            "spa+(north+coast)"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "gas",
+            "por"
+        ],
+        "fleet_moves": [
+            "gas",
+            "mao",
+            "por"
+        ]
+    },
+    "spa_sc": {
+        "name": "Spain (south coast)",
+        "abbreviations": [
+            "spa\/sc",
+            "spa(sc)",
+            "spain\/sc",
+            "spain(sc)",
+            "spn\/sc",
+            "spn(sc)",
+            "spa+(south+coast)"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "mar",
+            "por"
+        ],
+        "fleet_moves": [
+            "lyo",
+            "mao",
+            "mar",
+            "por",
+            "wes"
+        ]
+    },
+    "spa": {
+        "name": "Spain",
+        "abbreviations": [
+            "spa",
+            "spn"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "gas",
+            "mar",
+            "por"
+        ],
+        "fleet_moves": [
+            "gas",
+            "lyo",
+            "mao",
+            "mar",
+            "por",
+            "wes"
+        ]
+    },
+    "stp_nc": {
+        "name": "St Petersburg (north coast)",
+        "abbreviations": [
+            "stp\/nc",
+            "stp(nc)",
+            "stpete\/nc",
+            "stpete(nc)",
+            "st.+petersburg\/nc",
+            "stp+(north+coast)"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "nwy"
+        ],
+        "fleet_moves": [
+            "bar",
+            "nwy"
+        ]
+    },
+    "stp_sc": {
+        "name": "St Petersburg (south coast)",
+        "abbreviations": [
+            "stp\/sc",
+            "stp(sc)",
+            "stpete\/sc",
+            "stpete(sc)",
+            "st.+petersburg\/sc",
+            "stp+(south+coast)"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "fin",
+            "lvn"
+        ],
+        "fleet_moves": [
+            "bot",
+            "fin",
+            "lvn"
+        ]
+    },
+    "stp": {
+        "name": "St Petersburg",
+        "abbreviations": [
+            "stp",
+            "stpete",
+            "st.+petersburg",
+            "st.petersburg"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "fin",
+            "lvn",
+            "mos",
+            "nwy"
+        ],
+        "fleet_moves": [
+            "bar",
+            "bot",
+            "fin",
+            "lvn",
+            "nwy"
+        ]
+    },
+    "swe": {
+        "name": "Sweden",
+        "abbreviations": [
+            "swe"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "den",
+            "fin",
+            "nwy"
+        ],
+        "fleet_moves": [
+            "bal",
+            "bot",
+            "den",
+            "fin",
+            "nwy",
+            "ska"
+        ]
+    },
+    "syr": {
+        "name": "Syria",
+        "abbreviations": [
+            "syr"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "arm",
+            "smy"
+        ],
+        "fleet_moves": [
+            "eas",
+            "smy"
+        ]
+    },
+    "tri": {
+        "name": "Trieste",
+        "abbreviations": [
+            "tri"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "alb",
+            "bud",
+            "ser",
+            "tyr",
+            "ven",
+            "vie"
+        ],
+        "fleet_moves": [
+            "adr",
+            "alb",
+            "ven"
+        ]
+    },
+    "tun": {
+        "name": "Tunis",
+        "abbreviations": [
+            "tun"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "naf"
+        ],
+        "fleet_moves": [
+            "ion",
+            "naf",
+            "tys",
+            "wes"
+        ]
+    },
+    "tus": {
+        "name": "Tuscany",
+        "abbreviations": [
+            "tus"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "pie",
+            "rom",
+            "ven"
+        ],
+        "fleet_moves": [
+            "lyo",
+            "pie",
+            "rom",
+            "tys"
+        ]
+    },
+    "tyr": {
+        "name": "Tyrolia",
+        "abbreviations": [
+            "tyr",
+            "tyl",
+            "trl",
+            "tyo"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "boh",
+            "mun",
+            "pie",
+            "tri",
+            "ven",
+            "vie",
+            "swi"
+        ],
+        "fleet_moves": []
+    },
+    "tys": {
+        "name": "Tyrrhenian Sea",
+        "abbreviations": [
+            "tys",
+            "tyrr",
+            "tyrrhenian",
+            "tyn",
+            "tyh"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "ion",
+            "lyo",
+            "rom",
+            "nap",
+            "tun",
+            "tus",
+            "wes"
+        ]
+    },
+    "ukr": {
+        "name": "Ukraine",
+        "abbreviations": [
+            "ukr"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "gal",
+            "mos",
+            "rum",
+            "sev",
+            "war"
+        ],
+        "fleet_moves": []
+    },
+    "ven": {
+        "name": "Venice",
+        "abbreviations": [
+            "ven"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "apu",
+            "pie",
+            "rom",
+            "tri",
+            "tus",
+            "tyr"
+        ],
+        "fleet_moves": [
+            "adr",
+            "apu",
+            "tri"
+        ]
+    },
+    "vie": {
+        "name": "Vienna",
+        "abbreviations": [
+            "vie"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "boh",
+            "bud",
+            "gal",
+            "tri",
+            "tyr"
+        ],
+        "fleet_moves": []
+    },
+    "wal": {
+        "name": "Wales",
+        "abbreviations": [
+            "wal"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "lon",
+            "lvp",
+            "yor"
+        ],
+        "fleet_moves": [
+            "eng",
+            "iri",
+            "lon",
+            "lvp"
+        ]
+    },
+    "war": {
+        "name": "Warsaw",
+        "abbreviations": [
+            "war"
+        ],
+        "type": "LAND",
+        "army_moves": [
+            "gal",
+            "lvn",
+            "mos",
+            "pru",
+            "sil",
+            "ukr"
+        ],
+        "fleet_moves": []
+    },
+    "wes": {
+        "name": "Western Mediterranean",
+        "abbreviations": [
+            "wes",
+            "wmed",
+            "west",
+            "western",
+            "westmed",
+            "wms",
+            "wme",
+            "wmd",
+            "west+med",
+            "wes+med",
+            "western+med"
+        ],
+        "type": "WATER",
+        "army_moves": [],
+        "fleet_moves": [
+            "mao",
+            "lyo",
+            "naf",
+            "spa_sc",
+            "tun",
+            "tys"
+        ]
+    },
+    "yor": {
+        "name": "Yorkshire",
+        "abbreviations": [
+            "yor",
+            "york",
+            "yonkers"
+        ],
+        "type": "COAST",
+        "army_moves": [
+            "edi",
+            "lon",
+            "lvp",
+            "wal"
+        ],
+        "fleet_moves": [
+            "edi",
+            "lon",
+            "nth"
+        ]
+    },
+    "swi": {
+        "name": "Switzerland",
+        "abbreviations": [
+            "swi"
+        ],
+        "type": "SHUT",
+        "army_moves": [
+            "mar",
+            "bur",
+            "mun",
+            "tyr",
+            "pie"
+        ],
+        "fleet_moves": [
+            "mar",
+            "pie"
+        ]
+    }
+}
