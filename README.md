@@ -3,7 +3,7 @@ A few of us decided to play diplomacy over Slack... then we decided to build thi
 
 Diplomacy is a game that breaks people.  It involves betreyal and backstabbing over a long period of time.  The premise is simple: the players are all world powers and they control armies.  Each power wants to control as much territory as possible.  All moves are deterministic, there is no randomness to the game.  However, people can lie about what they plan to do.
 
-Playing diplomacy is a bad idea in itself, but writing code to publicly render an otherwise private game is a genuine waste of raw creative energy.
+Playing diplomacy is a bad idea in itself, but writing complex code to publicly render an otherwise private, simple game is a genuine waste of raw creative energy.
 
 
 ## Directory Structure 
