@@ -22,3 +22,15 @@ Map data for a game should come from [diplom.org](http://www.diplom.org/dpjudge/
 we have scripts to convert these files to json.  The json files are
 then used by Overengineered Diplomacy for things like move rendering
 and transcript parsing.
+
+## Default Emoji
+
+Army: 🔫
+Fleet: ⛵️
+England: 🇬🇧
+France: 🇫🇷
+Germany: 🇩🇪
+Austria: 🇦🇹
+Italy: 🇮🇹
+Russia: 🇷🇺
+Turkey: 🇹🇷
