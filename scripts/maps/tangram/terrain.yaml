@@ -1,0 +1,58 @@
+sources:
+    terrain:
+        type: Raster
+        url: https://tile.mapzen.com/mapzen/terrain/v1/normal/{z}/{x}/{y}.png
+        url_params:
+            api_key: mapzen-CdEkXHF
+        max_zoom: 15
+
+layers:
+    terrain:
+        data: { source: terrain, layer: _default }
+        draw:
+            terrain-envmap:
+                order: 15 # over earth, below water polygon
+
+styles:
+    terrain-envmap:
+        base: raster
+        blend: multiply
+        lighting: false
+        raster: normal
+        shaders:
+            uniforms:
+                u_scale: .075
+                u_envmap: spheremap.jpg
+
+                # start and stop zoom levels that correspond to minFade and maxFade
+                u_min_zoom: 8.0
+                u_max_zoom: 14.0
+
+                # 0.0 is no fade, 1.0 is fully faded
+                u_min_fade: 0.5
+                u_max_fade: 1.0
+
+            blocks:
+                global: |
+                    // Simplified view-independent environment map
+                    vec4 applyEnvmap (in sampler2D _tex, in vec3 _normal) {
+                        const vec3 eye = vec3(0.,0.,-1.);
+                        vec3 r = reflect(eye, _normal);
+                        r.z += 1.0;
+                        float m = 2. * length(r);
+                        vec2 uv = r.xy / m + .5;
+                        vec4 col = texture2D(_tex, uv);
+
+                        vec3 white = vec3(1.0);
+
+                        float zoomProgress = smoothstep(u_min_zoom, u_max_zoom, u_map_position.z);
+                        float fadeAmount   = mix(u_min_fade, u_max_fade, zoomProgress);
+
+                        // scale rgb channels of hillshade
+                        vec3 fadedColor = mix(col.rgb, white, fadeAmount);
+                        return vec4( fadedColor, 1.0);
+                    }
+                color: |
+                    normal.z *= u_scale;
+                    normal = normalize(normal);
+                    color = applyEnvmap(u_envmap, normal);

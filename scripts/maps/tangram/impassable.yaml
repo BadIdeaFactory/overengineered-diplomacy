@@ -1,0 +1,31 @@
+import:
+    - https://tangrams.github.io/blocks/space/constant.yaml
+    - https://tangrams.github.io/blocks/patterns/stripes.yaml
+
+sources:
+    switzerland:
+        type: GeoJSON
+        url: ../../../data/maps/switzerland.geojson
+
+layers:
+    switzerland:
+        data: { source: switzerland }
+        draw:
+            impassable:
+                # todo: globals
+                order: 10
+                color: [0.722, 0.710, 0.710, 1.00]
+
+styles:
+    impassable:
+        base: polygons
+        mix: [patterns-stripes, space-constant]
+        blend: inlay
+        shaders:
+            defines:
+                GRAIN_AMOUNT: 2.
+                NUM_OCTAVES: 2
+            # todo: interpolate stripe size between zooms
+            blocks:
+                color: |
+                    color = mix(color,vec4(0.),diagonalStripes( getConstantCoords()*55.))*.15;

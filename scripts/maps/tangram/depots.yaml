@@ -1,0 +1,39 @@
+sources:
+    depots:
+        type: GeoJSON
+        url: ../../../data/maps/depots.geojson
+
+textures:
+    dot:
+        # This is a 2x size png (native 13px, retina 26px). We can't use
+        # a svg, because it's jaggedy no matter what.
+        url: ../../../img/dot.png
+
+layers:
+    depots:
+        data: { source: depots }
+        draw:
+            points-texture:
+                order: 40
+                size: 13px
+                collide: false
+                interactive: true
+                # text:
+                #     # offset: [0, 0]
+                #     # Is there a way to make the text not appear if it collides,
+                #     # but the point is still visible? Right now setting this
+                #     # to true will also cause the point to disappear if the
+                #     # entire thing collides.
+                #     collide: false
+                #     font:
+                #         typeface: Helvetica
+                #         fill: white
+                #         size: 12px
+                #         stroke:
+                #             color: [0.239, 0.263, 0.275, 1.00]
+                #             width: 4px
+
+styles:
+    points-texture:
+        base: points
+        texture: dot

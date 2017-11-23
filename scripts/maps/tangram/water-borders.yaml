@@ -1,0 +1,13 @@
+sources:
+    water-borders-10m:
+        type: GeoJSON
+        url: ../../../data/maps/diplomacy-10m-water-borders.geojson
+
+layers:
+    water-borders-10m:
+        data: { source: water-borders-10m }
+        draw:
+            lines:
+                order: 30
+                color: [0.420, 0.447, 0.459, 1.00]
+                width: 1px

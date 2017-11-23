@@ -1,0 +1,88 @@
+import:
+    - grain-grid.yaml
+    - terrain.yaml
+    - depots.yaml
+    - impassable.yaml
+    - water-borders.yaml
+    - boundaries.yaml
+    - extents.yaml
+
+global:
+    api_key: mapzen-CdEkXHF
+    color_earth: [0.922, 0.922, 0.898, 1.00]
+
+scene:
+    background:
+        # Prevents black screen flash before map tiles loads in
+        color: "#dddddd"
+
+sources:
+    mapzen:
+        type: TopoJSON
+        url: https://tile.mapzen.com/mapzen/vector/v1/boundaries,earth,water/{z}/{x}/{y}.topojson
+        url_params:
+            api_key: global.api_key
+        max_zoom: 16
+    test:
+        type: GeoJSON
+        url: ../../../data/maps/diplomacy1.geojson
+
+layers:
+    # boundaries:
+    #     data: { source: mapzen }
+    #     draw:
+    #         lines:
+    #             order: 15
+    #             color: [0.722, 0.710, 0.710, 1.00]
+    #             width: 2px
+    #     filter:
+    #         any:
+    #             - kind: [country]
+    #             - kind_detail: [2]
+    boundaries:
+        data: { source: test }
+        draw:
+            boundaries-interpolated:
+                order: 15
+                color: [0.722, 0.710, 0.710, 1.00] # Overridden by interpolated color
+                width: 2px
+    earth:
+        data: { source: mapzen }
+        draw:
+            earth-grid:
+                order: 0
+                color: global.color_earth
+    water:
+        data: { source: mapzen }
+        filter:
+            # This thing
+            boundary: false
+            not: { kind: [lake], area: { max: 44000000000 }}
+            # Hey did you know that Lake Onega changes area between zooms 4 and 5? Fun!
+        draw:
+            water-grid:
+                order: 20
+                color: [0.588, 0.635, 0.655, 1.00]
+            lines:
+                order: 30
+                color: [0.420, 0.447, 0.459, 1.00]
+                width: 1px
+
+styles:
+    functions-zoom:
+        shaders:
+            defines:
+                ZOOM_START: 6.
+                ZOOM_END: 7.
+                ZOOM_MAX: max(ZOOM_START, ZOOM_END)
+                ZOOM_IN: vec3(0.522, 0.510, 0.510)
+                ZOOM_OUT: vec3(0.722, 0.710, 0.710)
+            blocks:
+                global: |
+                    float zoom() {
+                        return mix(ZOOM_IN,
+                                   ZOOM_OUT,
+                                   clamp(smoothstep(ZOOM_START/ZOOM_MAX,
+                                                    ZOOM_END/ZOOM_MAX,
+                                                    max(u_map_position.z/ZOOM_MAX, 0.)), 0., 1.));
+                    }
