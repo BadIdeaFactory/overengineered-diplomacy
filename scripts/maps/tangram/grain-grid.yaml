@@ -1,0 +1,18 @@
+import:
+    - https://tangrams.github.io/blocks/filter/grain.yaml
+    - https://tangrams.github.io/blocks/patterns/grid.yaml
+
+styles:
+    grid:
+        base: polygons
+        mix: [patterns-grid, filter-grain]
+        shaders:
+            blocks:
+                color: |
+                    color.rgb += vec3(.15)*tileGrid();
+    water-grid:
+        base: polygons
+        mix: grid
+    earth-grid:
+        base: polygons
+        mix: grid

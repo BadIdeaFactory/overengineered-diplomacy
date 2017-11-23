@@ -1,0 +1,18 @@
+sources:
+    extents:
+        type: GeoJSON
+        url: ../../../data/maps/extents.geojson
+
+layers:
+    extents:
+        data: { source: extents }
+        draw:
+            dashed-line:
+                order: 30
+                color: [0.722, 0.710, 0.710, 1.00]
+                width: 1px
+
+styles:
+    dashed-line:
+        base: lines
+        dash: [3, 1]

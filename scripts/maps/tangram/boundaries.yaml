@@ -1,0 +1,22 @@
+import:
+  - ./zoom.yaml
+
+# A style that interpolates a color to be darker when you zoom in because
+# the terrain starts interfering with line color.
+styles:
+  boundaries-interpolated:
+    base: lines
+    mix:
+      - zoom
+    shaders:
+      defines:
+        ZOOM_START: 5
+        ZOOM_END: 7
+      uniforms:
+        # Tried globals here, and it doesn't work. This is a bug filed
+        # at https://github.com/tangrams/tangram/issues/449
+        u_initial: [0.722, 0.710, 0.710, 1.00]
+        u_final: [0.572, 0.570, 0.570, 1.00]
+      blocks:
+        color: |
+          color = mix(u_initial, u_final, zoom());

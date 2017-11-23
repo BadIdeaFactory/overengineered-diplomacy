@@ -1,0 +1,651 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1860,
+          55.9492
+        ]
+      },
+      "properties": {
+        "name": "Edinburgh",
+        "country": "England",
+        "type": "depot",
+        "coordinates": [
+          -3.1860,
+          55.9492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9745,
+          53.4046
+        ]
+      },
+      "properties": {
+        "name": "Liverpool",
+        "country": "England",
+        "type": "depot",
+        "coordinates": [
+          -2.9745,
+          53.4046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0851,
+          51.4968
+        ]
+      },
+      "properties": {
+        "name": "London",
+        "country": "England",
+        "type": "depot",
+        "coordinates": [
+          -0.0851,
+          51.4968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7446,
+          59.9151
+        ]
+      },
+      "properties": {
+        "name": "Oslo",
+        "country": "Norway",
+        "type": "depot",
+        "coordinates": [
+          10.7446,
+          59.9151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0725,
+          59.3164
+        ]
+      },
+      "properties": {
+        "name": "Stockholm",
+        "country": "Sweden",
+        "type": "depot",
+        "coordinates": [
+          18.0725,
+          59.3164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5759,
+          55.6780
+        ]
+      },
+      "properties": {
+        "name": "Copenhagen",
+        "country": "Denmark",
+        "type": "depot",
+        "coordinates": [
+          12.5759,
+          55.6780
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3951,
+          52.5012
+        ]
+      },
+      "properties": {
+        "name": "Berlin",
+        "country": "Germany",
+        "type": "depot",
+        "coordinates": [
+          13.3951,
+          52.5012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5796,
+          48.1294
+        ]
+      },
+      "properties": {
+        "name": "Munich",
+        "country": "Germany",
+        "type": "depot",
+        "coordinates": [
+          11.5796,
+          48.1294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1390,
+          54.3117
+        ]
+      },
+      "properties": {
+        "name": "Kiel",
+        "country": "Germany",
+        "type": "depot",
+        "coordinates": [
+          10.1390,
+          54.3117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3621,
+          48.8430
+        ]
+      },
+      "properties": {
+        "name": "Paris",
+        "country": "France",
+        "type": "depot",
+        "coordinates": [
+          2.3621,
+          48.8430
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4108,
+          43.2752
+        ]
+      },
+      "properties": {
+        "name": "Marseilles",
+        "country": "France",
+        "type": "depot",
+        "coordinates": [
+          5.4108,
+          43.2752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4660,
+          48.3891
+        ]
+      },
+      "properties": {
+        "name": "Brest",
+        "country": "France",
+        "type": "depot",
+        "coordinates": [
+          -4.4660,
+          48.3891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1352,
+          38.7177
+        ]
+      },
+      "properties": {
+        "name": "Lisbon",
+        "country": "Portugal",
+        "type": "depot",
+        "coordinates": [
+          -9.1352,
+          38.7177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6832,
+          40.3989
+        ]
+      },
+      "properties": {
+        "name": "Madrid",
+        "country": "Spain",
+        "type": "depot",
+        "coordinates": [
+          -3.6832,
+          40.3989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3726,
+          50.8354
+        ]
+      },
+      "properties": {
+        "name": "Brussels",
+        "country": "Belgium",
+        "type": "depot",
+        "coordinates": [
+          4.3726,
+          50.8354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8972,
+          52.3639
+        ]
+      },
+      "properties": {
+        "name": "Amsterdam",
+        "country": "Holland",
+        "type": "depot",
+        "coordinates": [
+          4.8972,
+          52.3639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3943,
+          48.1972
+        ]
+      },
+      "properties": {
+        "name": "Vienna",
+        "country": "Austria",
+        "type": "depot",
+        "coordinates": [
+          16.3943,
+          48.1972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0530,
+          47.4820
+        ]
+      },
+      "properties": {
+        "name": "Budapest",
+        "country": "Austria",
+        "type": "depot",
+        "coordinates": [
+          19.0530,
+          47.4820
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8016,
+          45.6371
+        ]
+      },
+      "properties": {
+        "name": "Trieste",
+        "country": "Austria",
+        "type": "depot",
+        "coordinates": [
+          13.8016,
+          45.6371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6364,
+          55.7348
+        ]
+      },
+      "properties": {
+        "name": "Moscow",
+        "country": "Russia",
+        "type": "depot",
+        "coordinates": [
+          37.6364,
+          55.7348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.5413,
+          44.5826
+        ]
+      },
+      "properties": {
+        "name": "Sevastopol",
+        "country": "Russia",
+        "type": "depot",
+        "coordinates": [
+          33.5413,
+          44.5826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0059,
+          52.2244
+        ]
+      },
+      "properties": {
+        "name": "Warsaw",
+        "country": "Russia",
+        "type": "depot",
+        "coordinates": [
+          21.0059,
+          52.2244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3442,
+          59.9289
+        ]
+      },
+      "properties": {
+        "name": "St. Petersburg",
+        "country": "Russia",
+        "type": "depot",
+        "coordinates": [
+          30.3442,
+          59.9289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4969,
+          41.8818
+        ]
+      },
+      "properties": {
+        "name": "Rome",
+        "country": "Italy",
+        "type": "depot",
+        "coordinates": [
+          12.4969,
+          41.8818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3404,
+          45.4274
+        ]
+      },
+      "properties": {
+        "name": "Venice",
+        "country": "Italy",
+        "type": "depot",
+        "coordinates": [
+          12.3404,
+          45.4274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2685,
+          40.8408
+        ]
+      },
+      "properties": {
+        "name": "Naples",
+        "country": "Italy",
+        "type": "depot",
+        "coordinates": [
+          14.2685,
+          40.8408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8464,
+          39.9097
+        ]
+      },
+      "properties": {
+        "name": "Ankara",
+        "country": "Turkey",
+        "type": "depot",
+        "coordinates": [
+          32.8464,
+          39.9097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.9737,
+          41.0089
+        ]
+      },
+      "properties": {
+        "name": "Constantinople",
+        "country": "Turkey",
+        "type": "depot",
+        "coordinates": [
+          28.9737,
+          41.0089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1692,
+          38.3976
+        ]
+      },
+      "properties": {
+        "name": "Smyrna",
+        "country": "Turkey",
+        "type": "depot",
+        "coordinates": [
+          27.1692,
+          38.3976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7033,
+          37.9908
+        ]
+      },
+      "properties": {
+        "name": "Athens",
+        "country": "Greece",
+        "type": "depot",
+        "coordinates": [
+          23.7033,
+          37.9908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.184326171875,
+          36.77409249464195
+        ]
+      },
+      "properties": {
+        "name": "Tunis",
+        "country": "Tunis",
+        "type": "depot",
+        "coordinates": [
+          10.184326171875,
+          36.77409249464195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4648,
+          44.7955
+        ]
+      },
+      "properties": {
+        "name": "Belgrade",
+        "country": "Serbia",
+        "type": "depot",
+        "coordinates": [
+          20.4648,
+          44.7955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1063,
+          44.4259
+        ]
+      },
+      "properties": {
+        "name": "Bucharest",
+        "country": "Rumania",
+        "type": "depot",
+        "coordinates": [
+          26.1063,
+          44.4259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2539,
+          42.6954
+        ]
+      },
+      "properties": {
+        "name": "Sofia",
+        "country": "Bulgaria",
+        "type": "depot",
+        "coordinates": [
+          23.2539,
+          42.6954
+        ]
+      }
+    }
+  ]
+}

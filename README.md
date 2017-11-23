@@ -17,8 +17,10 @@ the game interface are kept.
 
 - `/css`, `/js`, and `/img`: These hold the supporting content behind the ultimate Diplomacy user experience.
 
+- `/src`: Source assets.
+
 ## Compiling the Maps
-Map data for a game should come from [diplom.org](http://www.diplom.org/dpjudge/new/?page=MapFiles) and 
+Map data for a game should come from [diplom.org](http://www.diplom.org/dpjudge/new/?page=MapFiles) and
 we have scripts to convert these files to json.  The json files are
 then used by Overengineered Diplomacy for things like move rendering
 and transcript parsing.

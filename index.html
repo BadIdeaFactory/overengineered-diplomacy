@@ -2,17 +2,77 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Overengineered Diplomacy</title>    
+    <title>Overengineered Diplomacy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      #label {
+        display: none;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: auto;
+        background-color: white;
+        z-index: 1000;
+        padding: 0.55em 0.75em 0.25em;
+        border-radius: 2px;
+        box-shadow: 0 1px 8px rgba(0,0,0,0.25);
+        font-family: 'Special Elite', monospace;
+        text-align: right;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      #label-country {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+      }
+
+      #event-log {
+        z-index: 1000;
+        background: white;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 4px;
+        padding: 15px;
+      }
+
+      #event-log ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+    </style>
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container-fluid" style="display:none">
-      <object id="map" data="data/maps/LargeDipColor.svg" type="image/svg+xml"></object>
+    <div id="map"></div>
+    <div id="label">
+      <div id="label-city"></div>
+      <div id="label-country"></div>
     </div>
-    
+
     <div id="event-log">
       <ul>
         <li>✅ 🇬🇧 ⛵️ LON ➡️ ENG</li>
@@ -21,6 +81,10 @@
       </ul>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.min.js"></script>
+    <script src="https://mapzen.com/tangram/0.14/tangram.debug.js"></script>
+    <script src="js/main.js"></script>
     <script type="text/javascript">
       $(function() {
         $('#map')[0].addEventListener('load', function() {
