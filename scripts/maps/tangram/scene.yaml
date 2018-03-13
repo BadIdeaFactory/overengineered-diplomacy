@@ -8,7 +8,7 @@ import:
     - extents.yaml
 
 global:
-    api_key: mapzen-CdEkXHF
+    api_key: imUVUY8MSQa0aXXq7tRYMg
     color_earth: [0.922, 0.922, 0.898, 1.00]
 
 scene:
@@ -19,7 +19,7 @@ scene:
 sources:
     mapzen:
         type: TopoJSON
-        url: https://tile.mapzen.com/mapzen/vector/v1/boundaries,earth,water/{z}/{x}/{y}.topojson
+        url: https://tile.nextzen.org/tilezen/vector/v1/512/all/{z}/{x}/{y}.topojson
         url_params:
             api_key: global.api_key
         max_zoom: 16
