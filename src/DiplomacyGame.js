@@ -1,7 +1,9 @@
-import BoardgameIO from 'boardgame.io'
+import { Game, TurnOrder } from 'boardgame.io/core'
 
-const DiplomacyGame = BoardgameIO.Game({
-  setup: () => ({ cells: Array(9).fill(null) }),
+const DiplomacyGame = Game({
+  setup: (numPlayers) => ({
+    cells: Array(9).fill(null)
+  }),
 
   moves: {
     clickCell(G, ctx, id) {
@@ -10,6 +12,10 @@ const DiplomacyGame = BoardgameIO.Game({
       return { ...G, cells } // don't mutate original state.
     },
   },
+
+  flow: {
+    turnOrder: TurnOrder.ANY
+  }
 })
 
 export default DiplomacyGame

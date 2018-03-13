@@ -6,9 +6,12 @@ import DiplomacyGame from './DiplomacyGame'
 import registerServiceWorker from './registerServiceWorker'
 import './index.css'
 
-var App = BoardgameIO.ReactClient({
+const MAX_PLAYERS = 7
+
+const App = BoardgameIO.ReactClient({
   board: GameBoard,
   game: DiplomacyGame,
+  numPlayers: MAX_PLAYERS,
   multiplayer: true
 })
 
