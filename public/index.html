@@ -19,13 +19,49 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Overengineered Diplomacy</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.min.js"></script>
+    <script src="https://www.nextzen.org/tangram/0.14/tangram.debug.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        $('#map')[0].addEventListener('load', function() {
+          $.ajax("data/maps/base.json")
+          .done(function(data) {
+            var a = document.getElementById("map");
+
+            // Get the SVG document inside the Object tag
+            var svgDoc = a.contentDocument;
+            for(var x in data) {
+
+              province_code = x;
+              if(x.indexOf('_') != -1)
+                province_code = x.substr(0, x.indexOf('_'));
+
+              console.log(province_code);
+
+              var svgItem = svgDoc.getElementById(province_code);
+              svgItem.setAttribute("fill", "lime");
+            }
+          })
+        }, true);
+      });
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
