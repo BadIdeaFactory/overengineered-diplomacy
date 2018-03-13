@@ -1,5 +1,4 @@
 import BoardgameIO from 'boardgame.io'
-import './DiplomacyGame.css'
 
 const DiplomacyGame = BoardgameIO.Game({
   setup: () => ({ cells: Array(9).fill(null) }),

@@ -9,6 +9,7 @@ import './index.css'
 var App = BoardgameIO.ReactClient({
   board: GameBoard,
   game: DiplomacyGame,
+  multiplayer: true
 })
 
 ReactDOM.render(<App />, document.getElementById('root'))
