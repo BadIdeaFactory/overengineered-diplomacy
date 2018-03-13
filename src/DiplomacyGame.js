@@ -1,7 +1,10 @@
 import { Game, TurnOrder } from 'boardgame.io/core'
 
+import { setupPlayers } from './rules/players'
+
 const DiplomacyGame = Game({
   setup: (numPlayers) => ({
+    players: setupPlayers(numPlayers),
     cells: Array(9).fill(null)
   }),
 
@@ -17,5 +20,6 @@ const DiplomacyGame = Game({
     turnOrder: TurnOrder.ANY
   }
 })
+
 
 export default DiplomacyGame
