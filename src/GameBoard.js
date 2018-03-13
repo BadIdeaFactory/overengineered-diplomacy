@@ -1,8 +1,8 @@
 /* global L, Tangram */
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './GameBoard.css'
 
-class App extends Component {
+class GameBoard extends Component {
   componentDidMount () {
     var INITIAL_VIEW = [56.46, 18.93]
     var INITIAL_ZOOM = 4
@@ -40,7 +40,7 @@ class App extends Component {
     })
     
     function onTangramHover (e) {
-      if (labelShouldStick === true) return;
+      if (labelShouldStick === true) return
       if (e.feature) {
         labelEl.style.display = 'block'
         labelCityEl.textContent = e.feature.properties.name
@@ -96,4 +96,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default GameBoard
