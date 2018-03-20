@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import MapLabel from './MapLabel'
+import { MapLabel } from './MapLabel'
 
 it('does not render if city or country props are not provided', () => {
   const wrapper = shallow(<MapLabel />)

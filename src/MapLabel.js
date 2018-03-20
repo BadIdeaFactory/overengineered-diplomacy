@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import './MapLabel.css'
 
-function MapLabel (props) {
+export function MapLabel (props) {
   const { city, country } = props
 
   if (!city || !country) return null
