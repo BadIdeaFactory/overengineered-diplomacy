@@ -1,0 +1,21 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* boardgame.io debug panel */
+.debug-ui {
+  z-index: 2000;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  overflow: auto;
+  opacity: 1;
+  background-color: #fefefe99;
+}
+
+.debug-ui pre {
+  background-color: #f5f5f599;
+}
