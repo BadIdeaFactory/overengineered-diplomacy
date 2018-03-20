@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Map from './Map'
+import GameMap from './GameMap'
 import './GameBoard.css'
 
 class GameBoard extends Component {
   render() {
     return (
       <React.Fragment>
-        <Map />
+        <GameMap />
         <div id="label">
           <div id="label-city"></div>
           <div id="label-country"></div>
