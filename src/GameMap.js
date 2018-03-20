@@ -1,5 +1,6 @@
 /* global L, Tangram */
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Map as Leaflet, TileLayer, ZoomControl, Marker, Popup } from 'react-leaflet'
 import 'leaflet-hash'
 import 'leaflet/dist/leaflet.css'
@@ -19,6 +20,10 @@ const MAP_OPTIONS = {
 }
 
 export default class GameMap extends React.Component {
+  static propTypes = {
+    handleMapSelection: PropTypes.func
+  }
+
   constructor (props) {
     super(props)
 
@@ -39,14 +44,6 @@ export default class GameMap extends React.Component {
 
     const hash = new L.Hash(map)
 
-    layer.setSelectionEvents({
-      hover: onTangramHover,
-      click: onTangramClick
-    })
-    
-    var labelEl = document.getElementById('label')
-    var labelCityEl = document.getElementById('label-city')
-    var labelCountryEl = document.getElementById('label-country')
     var labelShouldStick = false
     var markers = []
     var icon = L.icon({
@@ -55,39 +52,38 @@ export default class GameMap extends React.Component {
       iconAnchor: [12, 12]
     })
     
-    function onTangramHover (e) {
+    const onTangramHover = (e) => {
       if (labelShouldStick === true) return
       if (e.feature) {
-        labelEl.style.display = 'block'
-        labelCityEl.textContent = e.feature.properties.name
-        labelCountryEl.textContent = e.feature.properties.country
+        this.props.handleMapSelection(e.feature.properties.name, e.feature.properties.country)
       } else {
-        labelEl.style.display = 'none'
-        labelCityEl.textContent = ''
-        labelCountryEl.textContent = ''
+        this.props.handleMapSelection(null, null)
       }
     }
     
-    function onTangramClick (e) {
+    const onTangramClick = (e) => {
       for (var i = 0; i < markers.length; i++) {
         markers[i].removeFrom(map)
       }
       if (e.feature) {
-        labelEl.style.display = 'block'
-        labelCityEl.textContent = e.feature.properties.name
-        labelCountryEl.textContent = e.feature.properties.country
         labelShouldStick = true
+        this.props.handleMapSelection(e.feature.properties.name, e.feature.properties.country)
+
         var lat = e.feature.properties.coordinates[1]
         var lng = e.feature.properties.coordinates[0]
         var marker = L.marker([lat, lng], { icon: icon }).addTo(map)
         markers.push(marker)
       } else {
-        labelEl.style.display = 'none'
-        labelCityEl.textContent = ''
-        labelCountryEl.textContent = ''
+        this.props.handleMapSelection(null, null)
         labelShouldStick = false
       }
     }
+    
+    layer.setSelectionEvents({
+      hover: onTangramHover,
+      click: onTangramClick
+    })
+
   }
 
   render () {
