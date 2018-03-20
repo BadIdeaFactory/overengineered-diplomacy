@@ -1,7 +1,7 @@
 /* global L, Tangram */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Map as Leaflet, TileLayer, ZoomControl, Marker, Popup } from 'react-leaflet'
+import { Map as Leaflet, ZoomControl, Marker } from 'react-leaflet'
 import 'leaflet-hash'
 import 'leaflet/dist/leaflet.css'
 import './GameMap.css'
@@ -29,64 +29,64 @@ export default class GameMap extends React.Component {
 
     this.state = {
       position: INITIAL_VIEW,
-      zoom: INITIAL_ZOOM
+      zoom: INITIAL_ZOOM,
+      labelShouldStick: false,
+      marker: null
     }
   }
 
   componentDidMount () {
+    const map = this.map.leafletElement
     const layer = Tangram.leafletLayer({
       scene: 'scripts/maps/tangram/scene.yaml'
+    }).addTo(map)
+
+    // eslint-disable-next-line no-unused-vars
+    const hash = new L.Hash(map)
+    
+    layer.setSelectionEvents({
+      hover: this.onTangramHover,
+      click: this.onTangramClick
+    })
+  }
+
+  onTangramHover = (event) => {
+    if (this.state.labelShouldStick === true) return
+    if (event.feature) {
+      this.props.handleMapSelection(event.feature.properties.name, event.feature.properties.country)
+    } else {
+      this.props.handleMapSelection(null, null)
+    }
+  }
+
+  onTangramClick = (event) => {
+    this.setState({
+      marker: null
     })
 
-    const map = this.map.leafletElement
+    if (event.feature) {
+      const lat = event.feature.properties.coordinates[1]
+      const lng = event.feature.properties.coordinates[0]
 
-    layer.addTo(map)
+      this.setState({
+        marker: { lat, lng },
+        labelShouldStick: true
+      })
+      this.props.handleMapSelection(event.feature.properties.name, event.feature.properties.country)
+    } else {
+      this.setState({ labelShouldStick: false })
+      this.props.handleMapSelection(null, null)
+    }
+  }
+  
 
-    const hash = new L.Hash(map)
-
-    var labelShouldStick = false
-    var markers = []
-    var icon = L.icon({
+  render () {
+    const icon = L.icon({
       iconUrl: 'img/crosshairs.png',
       iconSize: [24, 24],
       iconAnchor: [12, 12]
     })
-    
-    const onTangramHover = (e) => {
-      if (labelShouldStick === true) return
-      if (e.feature) {
-        this.props.handleMapSelection(e.feature.properties.name, e.feature.properties.country)
-      } else {
-        this.props.handleMapSelection(null, null)
-      }
-    }
-    
-    const onTangramClick = (e) => {
-      for (var i = 0; i < markers.length; i++) {
-        markers[i].removeFrom(map)
-      }
-      if (e.feature) {
-        labelShouldStick = true
-        this.props.handleMapSelection(e.feature.properties.name, e.feature.properties.country)
 
-        var lat = e.feature.properties.coordinates[1]
-        var lng = e.feature.properties.coordinates[0]
-        var marker = L.marker([lat, lng], { icon: icon }).addTo(map)
-        markers.push(marker)
-      } else {
-        this.props.handleMapSelection(null, null)
-        labelShouldStick = false
-      }
-    }
-    
-    layer.setSelectionEvents({
-      hover: onTangramHover,
-      click: onTangramClick
-    })
-
-  }
-
-  render () {
     return (
       <Leaflet
         center={this.state.position}
@@ -96,6 +96,7 @@ export default class GameMap extends React.Component {
         {...MAP_OPTIONS}
       >
         <ZoomControl position="topright" />
+        {this.state.marker && <Marker position={this.state.marker} icon={icon} />}
       </Leaflet>
     )
   }
