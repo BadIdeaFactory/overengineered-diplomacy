@@ -1,3 +1,8 @@
+export const TURN_SEASONS = {
+  SPRING: 'SPRING',
+  FALL: 'FALL'
+}
+
 export const GREAT_POWERS = {
   AUSTRIA: 'AUSTRIA',
   ENGLAND: 'ENGLAND',
