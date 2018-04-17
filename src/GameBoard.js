@@ -1,17 +1,38 @@
 import React, { Component } from 'react'
-import Map from './Map'
+import GameMap from './GameMap'
+import MapLabel from './MapLabel'
 import './GameBoard.css'
 
 class GameBoard extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      selectedCity: null, 
+      selectedCountry: null
+    }
+  }
+
+  handleMapSelection = (city, country) => {
+    if (city && country) {
+      this.setState({
+        selectedCity: city,
+        selectedCountry: country
+      })
+    } else {
+      this.setState({
+        selectedCity: null,
+        selectedCountry: null
+      })
+    }
+  }
+
   render() {
     return (
       <React.Fragment>
-        <Map />
-        <div id="label">
-          <div id="label-city"></div>
-          <div id="label-country"></div>
-        </div>
-    
+        <GameMap handleMapSelection={this.handleMapSelection} />
+        <MapLabel city={this.state.selectedCity} country={this.state.selectedCountry} />
+
         <div id="event-log">
           <ul>
             <li>✅ 🇬🇧 ⛵️ LON ➡️ ENG</li>

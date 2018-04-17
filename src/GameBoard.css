@@ -1,27 +1,3 @@
-#label {
-  display: none;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: auto;
-  background-color: white;
-  z-index: 1000;
-  padding: 0.55em 0.75em 0.25em;
-  border-radius: 2px;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.25);
-  font-family: 'Special Elite', monospace;
-  text-align: right;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-#label-country {
-  font-size: 0.75em;
-  margin-top: 0.25em;
-}
-
 #event-log {
   z-index: 1000;
   background: white;
