@@ -1,12 +1,19 @@
 import { Game, TurnOrder } from 'boardgame.io/core'
 
-import { setupPlayers } from './rules/players'
+import { setupPlayers, setupStartingPositions } from './rules/players'
+import { PROVINCES, GREAT_POWERS, UNIT_TYPES } from './rules/constants'
 
 const DiplomacyGame = Game({
-  setup: (ctx) => ({
-    players: setupPlayers(ctx.numPlayers, ctx.random),
-    cells: Array(9).fill(null)
-  }),
+  setup: (ctx) => {
+    const players = setupPlayers(ctx.numPlayers, ctx.random)
+    const startingPositions = setupStartingPositions(players)
+ 
+    return {
+      players: players,
+      supplyCenters: startingPositions,
+      cells: Array(9).fill(null)
+    }
+  },
 
   moves: {
     clickCell(G, ctx, id) {
