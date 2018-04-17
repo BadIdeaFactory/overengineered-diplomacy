@@ -1,9 +1,8 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { shallow } from 'enzyme'
 import GameBoard from './GameBoard'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<GameBoard />, div)
-  ReactDOM.unmountComponentAtNode(div)
+  const wrapper = shallow(<GameBoard />)
+  expect(wrapper.find('div').length).toEqual(1)
 })
