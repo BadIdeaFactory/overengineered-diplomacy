@@ -1,8 +1,10 @@
 /* global L, Tangram */
 import React from 'react'
 import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 import { Map as Leaflet, ZoomControl, Marker } from 'react-leaflet'
 import 'leaflet-hash'
+import { setSelectedDepot } from './store/actions/gamemap'
 import 'leaflet/dist/leaflet.css'
 import './GameMap.css'
 
@@ -19,9 +21,9 @@ const MAP_OPTIONS = {
   zoomControl: false
 }
 
-export default class GameMap extends React.Component {
+class GameMap extends React.Component {
   static propTypes = {
-    handleMapSelection: PropTypes.func
+    setSelectedDepot: PropTypes.func
   }
 
   constructor (props) {
@@ -53,9 +55,9 @@ export default class GameMap extends React.Component {
   onTangramHover = (event) => {
     if (this.state.labelShouldStick === true) return
     if (event.feature) {
-      this.props.handleMapSelection(event.feature.properties.name, event.feature.properties.country)
+      this.props.setSelectedDepot(event.feature.properties.name, event.feature.properties.country)
     } else {
-      this.props.handleMapSelection(null, null)
+      this.props.setSelectedDepot(null, null)
     }
   }
 
@@ -72,13 +74,12 @@ export default class GameMap extends React.Component {
         marker: { lat, lng },
         labelShouldStick: true
       })
-      this.props.handleMapSelection(event.feature.properties.name, event.feature.properties.country)
+      this.props.setSelectedDepot(event.feature.properties.name, event.feature.properties.country)
     } else {
       this.setState({ labelShouldStick: false })
-      this.props.handleMapSelection(null, null)
+      this.props.setSelectedDepot(null, null)
     }
   }
-  
 
   render () {
     const icon = L.icon({
@@ -101,3 +102,11 @@ export default class GameMap extends React.Component {
     )
   }
 }
+
+function mapDispatchToProps (dispatch) {
+  return {
+    setSelectedDepot: (city, country) => dispatch(setSelectedDepot(city, country))
+  }
+}
+
+export default connect(null, mapDispatchToProps)(GameMap)
