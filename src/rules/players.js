@@ -1,7 +1,10 @@
-import { Random } from 'boardgame.io/core'
-import { shuffle } from 'lodash'
-
-export function setupPlayers (numPlayers) {
+/**
+ * Assign powers to players randomly.
+ *
+ * @param {Number} numPlayers
+ * @param {Object} randomizer - the `_ctx.random` object from Boardgame.io
+ */
+export function setupPlayers (numPlayers, randomizer) {
   const greatPowers = [
     'England',
     'Germany',
@@ -11,18 +14,15 @@ export function setupPlayers (numPlayers) {
     'France',
     'Austria'
   ]
-  // TODO: why is this not shuffling between sessions?
-  const randomizedPowers = Random.Shuffle(greatPowers)
 
-  // Use Lodash array shuffle for now.
-  const randomized = shuffle(greatPowers)
+  const randomizedPowers = randomizer.Shuffle(greatPowers)
 
   const players = {}
   for (let i = 0; i < numPlayers; i++) {
     players[i] = {
       id: i,
       name: null,
-      power: randomized[i]
+      power: randomizedPowers[i]
     }
   }
 
