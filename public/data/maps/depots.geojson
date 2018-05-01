@@ -11,6 +11,7 @@
         ]
       },
       "properties": {
+        "id": "EDI",
         "name": "Edinburgh",
         "country": "England",
         "type": "depot",
@@ -30,6 +31,7 @@
         ]
       },
       "properties": {
+        "id": "LVP",
         "name": "Liverpool",
         "country": "England",
         "type": "depot",
@@ -49,6 +51,7 @@
         ]
       },
       "properties": {
+        "id": "LON",
         "name": "London",
         "country": "England",
         "type": "depot",
@@ -68,6 +71,7 @@
         ]
       },
       "properties": {
+        "id": "NWY",
         "name": "Oslo",
         "country": "Norway",
         "type": "depot",
@@ -87,6 +91,7 @@
         ]
       },
       "properties": {
+        "id": "SWE",
         "name": "Stockholm",
         "country": "Sweden",
         "type": "depot",
@@ -106,6 +111,7 @@
         ]
       },
       "properties": {
+        "id": "DEN",
         "name": "Copenhagen",
         "country": "Denmark",
         "type": "depot",
@@ -125,6 +131,7 @@
         ]
       },
       "properties": {
+        "id": "BER",
         "name": "Berlin",
         "country": "Germany",
         "type": "depot",
@@ -144,6 +151,7 @@
         ]
       },
       "properties": {
+        "id": "MUN",
         "name": "Munich",
         "country": "Germany",
         "type": "depot",
@@ -163,6 +171,7 @@
         ]
       },
       "properties": {
+        "id": "KIE",
         "name": "Kiel",
         "country": "Germany",
         "type": "depot",
@@ -182,6 +191,7 @@
         ]
       },
       "properties": {
+        "id": "PAR",
         "name": "Paris",
         "country": "France",
         "type": "depot",
@@ -201,6 +211,7 @@
         ]
       },
       "properties": {
+        "id": "MAR",
         "name": "Marseilles",
         "country": "France",
         "type": "depot",
@@ -220,6 +231,7 @@
         ]
       },
       "properties": {
+        "id": "BRE",
         "name": "Brest",
         "country": "France",
         "type": "depot",
@@ -239,6 +251,7 @@
         ]
       },
       "properties": {
+        "id": "POR",
         "name": "Lisbon",
         "country": "Portugal",
         "type": "depot",
@@ -258,6 +271,7 @@
         ]
       },
       "properties": {
+        "id": "SPA",
         "name": "Madrid",
         "country": "Spain",
         "type": "depot",
@@ -277,6 +291,7 @@
         ]
       },
       "properties": {
+        "id": "BEL",
         "name": "Brussels",
         "country": "Belgium",
         "type": "depot",
@@ -296,6 +311,7 @@
         ]
       },
       "properties": {
+        "id": "HOL",
         "name": "Amsterdam",
         "country": "Holland",
         "type": "depot",
@@ -315,6 +331,7 @@
         ]
       },
       "properties": {
+        "id": "VIE",
         "name": "Vienna",
         "country": "Austria",
         "type": "depot",
@@ -334,6 +351,7 @@
         ]
       },
       "properties": {
+        "id": "BUD",
         "name": "Budapest",
         "country": "Austria",
         "type": "depot",
@@ -353,6 +371,7 @@
         ]
       },
       "properties": {
+        "id": "TRI",
         "name": "Trieste",
         "country": "Austria",
         "type": "depot",
@@ -372,6 +391,7 @@
         ]
       },
       "properties": {
+        "id": "MOS",
         "name": "Moscow",
         "country": "Russia",
         "type": "depot",
@@ -391,6 +411,7 @@
         ]
       },
       "properties": {
+        "id": "SEV",
         "name": "Sevastopol",
         "country": "Russia",
         "type": "depot",
@@ -410,6 +431,7 @@
         ]
       },
       "properties": {
+        "id": "WAR",
         "name": "Warsaw",
         "country": "Russia",
         "type": "depot",
@@ -429,6 +451,7 @@
         ]
       },
       "properties": {
+        "id": "STP",
         "name": "St. Petersburg",
         "country": "Russia",
         "type": "depot",
@@ -448,6 +471,7 @@
         ]
       },
       "properties": {
+        "id": "ROM",
         "name": "Rome",
         "country": "Italy",
         "type": "depot",
@@ -467,6 +491,7 @@
         ]
       },
       "properties": {
+        "id": "VEN",
         "name": "Venice",
         "country": "Italy",
         "type": "depot",
@@ -486,6 +511,7 @@
         ]
       },
       "properties": {
+        "id": "NAP",
         "name": "Naples",
         "country": "Italy",
         "type": "depot",
@@ -505,6 +531,7 @@
         ]
       },
       "properties": {
+        "id": "ANK",
         "name": "Ankara",
         "country": "Turkey",
         "type": "depot",
@@ -524,6 +551,7 @@
         ]
       },
       "properties": {
+        "id": "CON",
         "name": "Constantinople",
         "country": "Turkey",
         "type": "depot",
@@ -543,6 +571,7 @@
         ]
       },
       "properties": {
+        "id": "SMY",
         "name": "Smyrna",
         "country": "Turkey",
         "type": "depot",
@@ -562,6 +591,7 @@
         ]
       },
       "properties": {
+        "id": "GRE",
         "name": "Athens",
         "country": "Greece",
         "type": "depot",
@@ -581,6 +611,7 @@
         ]
       },
       "properties": {
+        "id": "TUN",
         "name": "Tunis",
         "country": "Tunis",
         "type": "depot",
@@ -600,6 +631,7 @@
         ]
       },
       "properties": {
+        "id": "SER",
         "name": "Belgrade",
         "country": "Serbia",
         "type": "depot",
@@ -619,6 +651,7 @@
         ]
       },
       "properties": {
+        "id": "RUM",
         "name": "Bucharest",
         "country": "Rumania",
         "type": "depot",
@@ -638,6 +671,7 @@
         ]
       },
       "properties": {
+        "id": "BUL",
         "name": "Sofia",
         "country": "Bulgaria",
         "type": "depot",

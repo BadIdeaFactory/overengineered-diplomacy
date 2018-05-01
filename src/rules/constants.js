@@ -364,8 +364,16 @@ export const PROVINCES = {
     name: 'Barents Sea',
     type: PROVINCE_TYPES.WATER
   },
+  BLA: {
+    name: 'Black Sea',
+    type: PROVINCE_TYPES.WATER
+  },
   EAS: {
     name: 'Eastern Mediterranean',
+    type: PROVINCE_TYPES.WATER
+  },
+  ENG: {
+    name: 'English Channel',
     type: PROVINCE_TYPES.WATER
   },
   BOT: {
