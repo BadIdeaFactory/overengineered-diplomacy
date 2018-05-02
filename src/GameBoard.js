@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import GameMap from './GameMap'
 import MapLabel from './MapLabel'
-import { PROVINCES, GREAT_POWERS_INFO } from './rules/constants'
+import { GREAT_POWERS_INFO } from './rules/constants'
 import depots from './geo/depots.json'
 import './GameBoard.css'
 
@@ -18,8 +18,6 @@ class GameBoard extends Component {
     // Append player colors to each depot
     depots.features = depots.features.map((feature) => {
       const id = feature.properties.id
-      let found = false
-
       const supplyCenter =  G.supplyCenters[id]
 
       // Not all supply centers have players on them, bail early if that's so
@@ -40,7 +38,7 @@ class GameBoard extends Component {
   render() {
     return (
       <React.Fragment>
-        <GameMap />
+        <GameMap depots={this.state.depots} />
         <MapLabel />
 
         <div id="event-log">

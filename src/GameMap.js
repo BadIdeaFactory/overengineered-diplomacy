@@ -23,6 +23,7 @@ const MAP_OPTIONS = {
 
 class GameMap extends React.Component {
   static propTypes = {
+    depots: PropTypes.object, // TODO: make a PropType geojson checker
     setSelectedDepot: PropTypes.func
   }
 
@@ -49,6 +50,12 @@ class GameMap extends React.Component {
     layer.setSelectionEvents({
       hover: this.onTangramHover,
       click: this.onTangramClick
+    })
+
+    layer.scene.subscribe({
+      load: (event) => {
+        layer.scene.setDataSource('depots', { type: 'GeoJSON', data: this.props.depots })
+      }
     })
   }
 
