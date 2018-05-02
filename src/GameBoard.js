@@ -2,27 +2,21 @@ import React, { Component } from 'react'
 import GameMap from './GameMap'
 import MapLabel from './MapLabel'
 import { PROVINCES, GREAT_POWERS_INFO } from './rules/constants'
+import depots from './geo/depots.json'
 import './GameBoard.css'
 
 class GameBoard extends Component {
   constructor (props) {
     super(props)
 
-    this.createGeoJSON(props.G)
+    this.state = {
+      depots: this.createGeoJSON(props.G)
+    }
   }
 
-  createGeoJSON = async (G) => {
-    let data = {}
-
-    try {
-      const file = await window.fetch('/data/maps/depots.geojson')
-      data = await file.json()
-    } catch (err) {
-      console.log('Error retrieving depots.geojson', err)
-    }
-
+  createGeoJSON = (G) => {
     // Append player colors to each depot
-    data.features = data.features.map((feature) => {
+    depots.features = depots.features.map((feature) => {
       const id = feature.properties.id
       let found = false
 
@@ -39,6 +33,8 @@ class GameBoard extends Component {
 
       return feature
     })
+
+    return depots
   }
 
   render() {

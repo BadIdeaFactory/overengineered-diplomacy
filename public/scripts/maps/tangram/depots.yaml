@@ -1,7 +1,7 @@
-sources:
-    depots:
-        type: GeoJSON
-        url: ../../../data/maps/depots.geojson
+# sources:
+#     depots:
+#         type: GeoJSON
+#         url: ../../../data/maps/depots.geojson
 
 textures:
     dot:
